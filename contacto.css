@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-header {
+    background-color: #024CAA; /* Azul */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-header h1 {
+    color: #EC8305; /* Naranja */
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Ícono de Home */
+.home-icon i {
+    font-size: 24px;
+    color: #09a3c9; /* Color del ícono Home */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.home-icon i:hover {
+    color: #EC8305; /* Naranja al pasar el cursor sobre el ícono */
+}
+
+/* Título Principal */
+h2 {
+    color: #024CAA;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+/* Contenedores de formulario y sección de información */
+.form-container, .info-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+}
+
+/* Estilo del formulario */
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Botón de envío */
+.submit-button {
+    background-color: #024CAA;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #09a3c9;
+}
+
+/* Sección de información con imagen y texto */
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+/* Imagen en la sección de información */
+.contact-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #091057; /* Navy */
+    color: #DBD3D3; /* Texto claro */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #09a3c9; /* Color de los íconos */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #EC8305; /* Cambiar el color cuando pasas el cursor */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container, .info-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .info-content {
+        margin-right: 0;
+    }
+
+    .contact-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
