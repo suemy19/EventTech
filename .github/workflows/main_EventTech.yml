@@ -1,7 +1,8 @@
 name: Deploy static website to Azure Web App - EventTech
-on:  push
- 
-    branches: - main
+on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   build-and-deploy:
@@ -28,9 +29,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F4C28DFA7AA346E8A704CCBD7E22CF59 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_236A6A6F380B4C85A266366A13CA9501 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0DD306A2E9574E96A234B922FF6574E9 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
