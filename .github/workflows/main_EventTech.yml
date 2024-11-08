@@ -39,4 +39,3 @@ jobs:
           app-name: 'EventTech'
           slot-name: 'Production'
           package: .
-
