@@ -1,9 +1,8 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "eventtech";
-
+$servername = "sql106.infinityfree.com";
+$username = "if0_37675598";
+$password = "Palabra21";
+$dbname = "if0_37675598_XXX";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
