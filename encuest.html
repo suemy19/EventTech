@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta del Evento</title>
+    <link rel="stylesheet" href="encuesta.css"> <!-- CSS estilizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+  
+<body>
+    <header class="main-header">
+        <h1>ENCUESTA</h1>
+        <a href="index.html" class="home-icon">
+            <i class="fas fa-home"></i> <!-- Icono de Home -->
+        </a>
+    </header>
+
+    <main class="survey-form">
+        <section class="container">
+            <form method="post" action="encuesta.php?id=1">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" required>
+
+                <label for="carrera">Carrera:</label>
+                <input type="text" name="carrera" id="carrera" required>
+
+                <label for="enteraste">¿Cómo te enteraste del evento?</label>
+                <select name="enteraste" id="enteraste" required>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Correo electrónico">Correo electrónico</option>
+                    <option value="Recomendación de un amigo">Recomendación de un amigo</option>
+                    <option value="Carteles en el campus">Carteles en el campus</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label for="organizacion">¿Qué te pareció la organización del evento?</label>
+                <select name="organizacion" id="organizacion" required>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                </select>
+                
+                <label for="interes">¿Qué tipo de tecnologías o productos te interesaron más en el evento?</label>
+                <select name="interes" id="interes" required>
+                    <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+                    <option value="Realidad Virtual">Realidad Virtual</option>
+                    <option value="Internet de las Cosas (IoT)">Internet de las Cosas (IoT)</option>
+                    <option value="Desarrollo de Software">Desarrollo de Software</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                
+                <label for="calidad">¿Cómo calificarías la calidad de las presentaciones y demostraciones tecnológicas?</label>
+                <select name="calidad" id="calidad" required>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                </select>
+                
+                <label for="recomendar">¿Recomendarías este tipo de eventos tecnológicos a otros estudiantes?</label>
+                <select name="recomendar" id="recomendar" required>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                    <option value="Tal vez">Tal vez</option>
+                </select>
+                
+                <label for="mejorar">¿Qué mejorarías para futuros eventos tecnológicos? (Selecciona las que consideres necesarias)</label>
+                <select name="mejorar[]" id="mejorar" multiple required>
+                    <option value="Variedad de tecnologías">Variedad de tecnologías</option>
+                    <option value="Calidad de las presentaciones">Calidad de las presentaciones</option>
+                    <option value="Organización">Organización</option>
+                    <option value="Publicidad">Publicidad</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                
+                <label for="participar">¿Te gustaría participar en próximos eventos tecnológicos?</label>
+                <select name="participar" id="participar" required>
+                    <option value="Asistente">Sí, como asistente</option>
+                    <option value="Ponente/Expositor">Sí, como ponente/expositor</option>
+                    <option value="No">No</option>
+                </select>
+                
+                <label for="logistica">¿Consideras que el lugar y la logística del evento fueron adecuados?</label>
+                <select name="logistica" id="logistica" required>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                    <option value="Necesita mejoras">Necesita mejoras</option>
+                </select>
+                
+
+                <button type="submit" class="button">Enviar Encuesta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2024 Tecnológico</p>
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i> <!-- Icono de Facebook -->
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i> <!-- Icono de Twitter -->
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i> <!-- Icono de Instagram -->
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
